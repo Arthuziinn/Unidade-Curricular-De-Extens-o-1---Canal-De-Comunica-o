@@ -1,0 +1,488 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{longtable}
+
+\geometry{margin=2.5cm}
+
+\title{Projeto de Extensão \\ IFMG Betim \\ Canal de Comunicação}
+\author{Engenharia de Controle e Automação}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{MARCO 1 — Definição do Projeto}
+
+\subsection*{1. Identificação do Projeto}
+\textbf{Nome:} Canal de Comunicação IFMG Betim  
+
+\textbf{Grupo:} Arthur Siqueira Amaral e Thiago Gandra  
+
+\textbf{Membros (Scrum):}
+\begin{itemize}
+\item Desenvolvedor do canal de comunicação, criador do formulário, realizador de testes e ajustes, melhorias pós feedback - Arthur Siqueira.
+\item Desenvolvedor dos relatórios, responsável pela divulgação e implementação do canal de comunicação, coleta de feedback - Thiago Gandra
+\end{itemize}
+
+\item
+\item
+\item
+
+\subsection*{2. Justificativa}
+O projeto do Canal de Comunicação do IFMG Betim surge da necessidade de melhorar a interação entre os estudantes e a instituição. Atualmente, muitos alunos enfrentam dificuldades para esclarecer dúvidas acadêmicas, sugerir melhorias na comunicação interna e divulgar seus próprios projetos e trabalhos. A ausência de um canal centralizado pode gerar desinformação, baixa participação estudantil e perda de oportunidades de engajamento.
+
+Diante disso, o projeto busca criar um meio simples e acessível, baseado em formulário digital, que permita aos alunos enviarem dúvidas, sugestões e conteúdos de forma organizada. Isso contribui para uma comunicação mais eficiente, transparente e participativa dentro do campus.
+
+Além disso, a iniciativa valoriza a produção acadêmica dos estudantes ao permitir a divulgação de projetos, incentivando o protagonismo estudantil. O canal também fortalece a gestão institucional, pois fornece feedback direto dos alunos, auxiliando na tomada de decisões.
+
+\subsection*{3. Objetivos}
+
+\textbf{Objetivo Geral:}  
+Desenvolver e implementar um canal digital de comunicação para alunos do IFMG Betim até o final do semestre, visando melhorar a interação entre estudantes e instituição.
+
+\textbf{Objetivos Específicos:}
+\begin{itemize}
+\item Criar formulário funcional até a Sprint 2
+\item Implementar organização de respostas até a Sprint 3
+\item Permitir divulgação de projetos até a Sprint 4
+\item Divulgar o canal para 70\% dos alunos
+\item Avaliar satisfação dos usuários
+\end{itemize}
+
+\subsection*{4. Escopo}
+
+\textbf{Inclui:}
+\begin{itemize}
+\item Formulário online
+\item Envio de dúvidas e sugestões
+\item Divulgação de projetos
+\item Organização de respostas
+\end{itemize}
+
+\textbf{Não inclui:}
+\begin{itemize}
+\item Chat em tempo real
+\item Aplicativo próprio
+\item Integração complexa
+\end{itemize}
+
+\subsection*{5. Stakeholders}
+
+\begin{longtable}{|p{4cm}|c|p{4cm}|c|}
+\hline
+Nome/Grupo & Tipo & Interesse & Influência \\
+\hline
+Alunos & Interno & Uso do canal & Alta \\
+Professores & Interno & Comunicação & Média \\
+Coordenação & Interno & Feedback & Alta \\
+Comunicação IFMG & Interno & Divulgação & Alta \\
+\hline
+\end{longtable}
+
+\subsection*{6. Cronograma}
+
+\begin{tabular}{|c|p{8cm}|}
+\hline
+Sprint & Marco \\
+\hline
+1 & Planejamento \\
+2 & Formulário \\
+3 & Testes \\
+4 & Implementação \\
+5 & Feedback \\
+\hline
+\end{tabular}
+
+\subsection*{7. Riscos}
+
+\begin{tabular}{|p{5cm}|c|c|}
+\hline
+Risco & Probabilidade & Impacto \\
+\hline
+Baixa adesão & Média & Alta \\
+Erros no sistema & Baixa & Média \\
+Falta de resposta institucional & Média & Alta \\
+\hline
+\end{tabular}
+
+
+\section*{MARCO 2 — Product Backlog e Execução}
+
+\subsection*{1. Product Backlog}
+
+\begin{longtable}{|c|c|p{4cm}|p{4cm}|c|c|c|}
+\hline
+ID & Épico & História & Critério & Estimativa & Prioridade & Sprint \\
+\hline
+1 & Formulário & Como aluno, quero enviar dúvidas para obter respostas & Funciona corretamente & 3 & Must & S2 \\
+2 & Sugestões & Como aluno, quero sugerir melhorias & Armazenamento ok & 2 & Must & S2 \\
+3 & Projetos & Como aluno, quero divulgar projetos & Campo funcional & 3 & Must & S3 \\
+4 & Organização & Como admin, quero organizar dados & Planilha ok & 5 & Must & S2 \\
+5 & Interface & Como usuário, quero facilidade & Interface simples & 3 & Must & S2 \\
+6 & Feedback & Como aluno, quero resposta & Sistema ativo & 5 & Should & S3 \\
+7 & Divulgação & Como equipe, quero divulgar & Postagens feitas & 3 & Must & S3 \\
+8 & Testes & Como equipe, quero testar & Sem erros & 2 & Must & S2 \\
+9 & Segurança & Como usuário, quero proteção & Dados seguros & 5 & Should & S3 \\
+10 & Relatórios & Como coordenação, quero dados & Relatório ok & 5 & Could & S3 \\
+\hline
+\end{longtable}
+
+\subsection*{2. Definition of Done}
+
+\begin{itemize}
+\item Funciona corretamente;
+\item Testado;
+\item Sem erros críticos;
+\item Documentado;
+\item Aprovado pelo time;
+\end{itemize}
+
+\subsection*{3. Sprints}
+
+\textbf{Sprint 2:}
+\begin{itemize}
+\item Formulário — Arthur Siqueira Amaral;
+\item Sugestões — Thiago Gandra;
+\item Interface — Arthur Siqueira Amaral;
+\end{itemize}
+
+\textbf{Sprint 3:}
+\begin{itemize}
+\item Projetos — Arthur Siqueira Amaral;
+\item Feedback — Thiago Gandra;
+\item Relatórios — Thiago Gandra;
+\end{itemize}
+
+\subsection*{4. Riscos}
+
+\begin{tabular}{|p{5cm}|c|c|}
+\hline
+Risco & Probabilidade & Impacto \\
+\hline
+Baixa adesão & Média & Alta \\
+Falhas técnicas & Baixa & Média \\
+Falta de engajamento & Média & Alta \\
+Problemas de usabilidade & Média & Média \\
+Segurança de dados & Baixa & Alta \\
+\hline
+\end{tabular}
+
+\subsection*{5. Kanban}
+
+\section*{Quadro Kanban do Projeto}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Backlog} & \textbf{A Fazer} & \textbf{Em Progresso} & \textbf{Concluído} \\
+\hline
+
+Definição do projeto &
+Criar formulário de dúvidas &
+Desenvolvimento do formulário &
+Formulário implementado \\
+
+Levantamento de requisitos &
+Criar formulário de sugestões &
+Interface do sistema &
+Interface concluída \\
+
+Planejamento das sprints &
+Criar campo para divulgação de projetos &
+Validação de campos &
+Validação funcionando \\
+
+Definição do público-alvo &
+Implementar validação de dados &
+Testes iniciais &
+Testes concluídos \\
+
+Escolha das ferramentas &
+Criar sistema de organização das respostas &
+Ajustes de usabilidade &
+Sistema organizado \\
+
+ &
+Implementar feedback ao usuário &
+Integração com e-mail &
+Integração concluída \\
+
+ &
+Criar relatórios &
+Geração de métricas &
+Relatórios gerados \\
+
+ &
+Testes finais &
+Correções finais &
+Sistema validado \\
+
+ &
+Divulgação do canal &
+Campanha de divulgação &
+Canal divulgado \\
+
+ &
+Documentação final &
+Revisão do projeto &
+Projeto documentado \\
+
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Métricas de Sucesso (Complementares)}
+
+\subsection*{Métricas Quantitativas}
+\begin{itemize}
+\item Número de acessos ao canal por semana
+\item Taxa de conversão (acessos $\rightarrow$ envios no formulário)
+\item Número médio de dúvidas enviadas por semana
+\item Número de sugestões recebidas
+\item Quantidade de trabalhos divulgados
+\item Tempo médio de resposta aos alunos
+\item Taxa de respostas concluídas (%)
+\item Número de usuários únicos
+\item Taxa de crescimento de uso do canal
+\item Número de erros ou falhas reportadas
+\end{itemize}
+
+\subsection*{Métricas Qualitativas}
+\begin{itemize}
+\item Nível de satisfação dos usuários (pesquisa)
+\item Clareza percebida da interface
+\item Facilidade de uso do formulário
+\item Qualidade das sugestões recebidas
+\item Relevância dos trabalhos divulgados
+\item Percepção de utilidade do canal
+\item Feedback da coordenação/gestão
+\end{itemize}
+
+\subsection*{Métricas de Engajamento}
+\begin{itemize}
+\item Frequência de uso por aluno
+\item Taxa de retorno (usuários recorrentes)
+\item Participação por curso/turma
+\item Interação com divulgações de projetos
+\end{itemize}
+
+\subsection*{Métricas de Desempenho Técnico}
+\begin{itemize}
+\item Tempo de carregamento do formulário
+\item Taxa de falha no envio de dados
+\item Disponibilidade do sistema (\%)
+\item Número de bugs identificados por sprint
+\end{itemize}
+
+
+\section*{RELATÓRIO DE SPRINT 2 — Semana 2}
+
+\subsection*{1. Sprint Backlog}
+\begin{tabular}{|c|p{5cm}|c|c|}
+\hline
+1 & Criar formulário de dúvidas & Feito & Arthur Siqueira Amaral \\
+2 & Criar formulário de sugestões & Feito & Arthur Siqueira Amaral \\
+3 & Interface inicial & Em andamento & Thiago Gandra\\
+4 & Validação de dados & Feito & Equipe \\
+\hline
+\end{tabular}
+
+\subsection*{2. Burndown Chart}
+O gráfico mostra queda consistente, com leve atraso na interface. A equipe conseguiu manter ritmo produtivo.
+
+\subsection*{3. Artefatos}
+Formulário funcional e protótipo de interface.
+
+\subsection*{4. Impedimentos}
+Dificuldade na interface, resolvida com ajustes.
+
+\subsection*{5. Retrospectiva}
+Boa produtividade, melhorar tempo de desenvolvimento, revisar tarefas antes de iniciar
+
+\subsection*{6. Próxima Sprint}
+Finalizar interface e iniciar módulo de projetos
+
+---
+\item
+\item
+\item
+
+\section*{RELATÓRIO DE SPRINT 3 — Semana 3}
+
+\subsection*{1. Sprint Backlog}
+\begin{tabular}{|c|p{5cm}|c|c|}
+\hline
+1 & Finalizar interface & Feito & Dev 3 \\
+2 & Criar módulo de projetos & Feito & Dev 1 \\
+3 & Sistema de feedback & Em andamento & Dev 2 \\
+\hline
+\end{tabular}
+
+\subsection*{2. Burndown Chart}
+O gráfico apresenta leve atraso no final, devido à complexidade do feedback.
+
+\subsection*{3. Artefatos}
+Interface finalizada e módulo de divulgação de projetos.
+
+\subsection*{4. Impedimentos}
+Complexidade no feedback.
+
+\subsection*{5. Retrospectiva}
+Interface bem aceita, melhorar planejamento, testar antes da entrega
+
+\subsection*{6. Próxima Sprint}
+Finalizar feedback e iniciar testes gerais
+
+---
+
+\section*{RELATÓRIO DE SPRINT 4 — Semana 4}
+
+\subsection*{1. Sprint Backlog}
+\begin{tabular}{|c|p{5cm}|c|c|}
+\hline
+1 & Sistema de feedback & Feito & Dev 2 \\
+2 & Testes gerais & Feito & Equipe \\
+3 & Correções & Em andamento & Equipe \\
+\hline
+\end{tabular}
+
+\subsection*{2. Burndown Chart}
+O gráfico mostra conclusão próxima do prazo com pequenas correções finais.
+
+\subsection*{3. Artefatos}
+Sistema completo testado.
+
+\subsection*{4. Impedimentos}
+Pequenos bugs corrigidos.
+
+\subsection*{5. Retrospectiva}
+Boa integração, melhorar testes contínuos, automatizar testes
+
+\subsection*{6. Próxima Sprint}
+Finalização e entrega
+
+---
+
+\section*{RELATÓRIO DE SPRINT 5 — Semana 5}
+
+\subsection*{1. Sprint Backlog}
+\begin{tabular}{|c|p{5cm}|c|c|}
+\hline
+1 & Correções finais & Feito & Equipe \\
+2 & Documentação & Feito & Equipe \\
+3 & Divulgação & Feito & PO \\
+\hline
+\end{tabular}
+
+\subsection*{2. Burndown Chart}
+O gráfico mostra finalização completa dentro do prazo, com entrega de todas as funcionalidades.
+
+\subsection*{3. Artefatos}
+Sistema final, documentação e divulgação.
+
+\subsection*{4. Impedimentos}
+Nenhum relevante.
+
+\subsection*{5. Retrospectiva}
+Projeto concluído com sucesso, melhorar planejamento inicial, manter organização em projetos futuros
+
+\subsection*{6. Próxima Sprint}
+Encerramento do projeto
+
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+
+\section*{MARCO 3 — Relatório Final do Projeto}
+
+\subsection*{1. Capa}
+Projeto: Canal de Comunicação IFMG Betim \\
+Curso: Engenharia de Controle e Automação \\
+Semestre: 2026.1 \\
+Equipe: Arthur Siqueira e Thiago Gandra
+
+\subsection*{2. Resumo}
+Este projeto teve como objetivo desenvolver um canal de comunicação entre alunos e o IFMG Betim. O problema identificado foi a dificuldade na comunicação institucional e na divulgação de projetos acadêmicos. A solução proposta foi a criação de um formulário digital centralizado para envio de dúvidas, sugestões e trabalhos. A metodologia adotada foi baseada no Scrum, com desenvolvimento em sprints. Como resultado, foi implementado um sistema funcional que melhora a interação entre alunos e instituição, promovendo maior engajamento e organização das informações.
+
+\subsection*{3. Introdução}
+A comunicação eficiente em ambientes acadêmicos é essencial para o bom funcionamento institucional. No IFMG Betim, identificou-se a ausência de um canal estruturado para interação entre alunos e instituição. Este projeto visa solucionar essa lacuna por meio de uma ferramenta digital simples e acessível.
+
+\textbf{Objetivos:}
+\begin{itemize}
+\item Desenvolver um canal de comunicação centralizado
+\item Melhorar a interação entre alunos e instituição
+\item Permitir divulgação de projetos acadêmicos
+\end{itemize}
+
+\subsection*{4. Referencial Técnico}
+O projeto foi baseado em metodologias ágeis (Scrum) e princípios de desenvolvimento de sistemas e usabilidade.
+
+\begin{itemize}
+\item Scrum Guide  Schwaber e Sutherland
+\item Pressman  Engenharia de Software
+\item Sommerville  Software Engineering
+\item Nielsen  Usabilidade
+\item ISO/IEC 25010  Qualidade de Software
+\end{itemize}
+
+\subsection*{5. Metodologia}
+Foi utilizada a metodologia Scrum adaptada, com execução em cinco sprints:
+\begin{itemize}
+\item Sprint 1: Planejamento e definição
+\item Sprint 2: Desenvolvimento dos formulários
+\item Sprint 3: Interface e funcionalidades
+\item Sprint 4: Testes e validação
+\item Sprint 5: Finalização e entrega
+\end{itemize}
+
+\subsection*{6. Desenvolvimento e Resultados}
+O sistema desenvolvido possui as seguintes funcionalidades:
+\begin{itemize}
+\item Envio de dúvidas
+\item Envio de sugestões
+\item Divulgação de projetos acadêmicos
+\item Organização das respostas
+\end{itemize}
+
+Resultados alcançados:
+\begin{itemize}
+\item Sistema funcional e testado
+\item Interface simples e acessível
+\item Melhor organização da comunicação
+\end{itemize}
+
+\subsection*{7. Impacto de Extensão}
+\begin{itemize}
+\item Público beneficiado: alunos do IFMG Betim
+\item Melhoria na comunicação institucional
+\item Incentivo à participação estudantil
+\end{itemize}
+
+\subsection*{8. Análise do Processo Ágil}
+A utilização do Scrum permitiu melhor organização e divisão das tarefas. As retrospectivas contribuíram para a melhoria contínua da equipe ao longo do projeto.
+
+\subsection*{9. Conclusão}
+O projeto atingiu seus objetivos ao implementar uma solução funcional para comunicação interna. Como limitações, destaca-se a ausência de integrações mais avançadas. Como trabalhos futuros, sugere-se a evolução do sistema e automatização de respostas.
+
+\subsection*{10. Repositório Git}
+Link: \url{https://github.com/Arthuziinn/Unidade-Curricular-De-Extens-o-1---Canal-De-Comunica-o/tree/main}
+
+\section*{MARCO 4 — Apresentação Final}
+
+\subsection*{1. Envios}
+O slide utilizado para a apresentação foi enviado juntamente com o arquivo em questão. O Link do repositório Git segue abaixo, dentro do prazo especificado.
+
+\subsection*{2. Git}
+Link: \url{https://github.com/Arthuziinn/Unidade-Curricular-De-Extens-o-1---Canal-De-Comunica-o/tree/main}
+
+\end{document}
